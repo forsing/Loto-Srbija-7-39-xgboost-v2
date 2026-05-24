@@ -53,8 +53,8 @@ np.random.seed(SEED)
 random.seed(SEED)
 
 # 1. Učitaj loto podatke
-CSV_PATH = "/Users/4c/Desktop/GHQ/data/loto7_4620_k41.csv"
-OUT_TXT = Path("/Users/4c/Desktop/GHQ/KvantniRegresor/loto7_xgboost_2_predikcija.txt")
+CSV_PATH = "/data/loto7_4620_k41.csv"
+OUT_TXT = Path("/loto7_xgboost_2_predikcija.txt")
 N_MIN, N_MAX = 1, 39
 K = 7
 LAG = 5
@@ -357,11 +357,11 @@ ENSEMBLE            1.190   17.0%   0.529   0.242
 (slučajan baseline ≈ 1.256 hits/7)
 
 Predicted Next Lottery Numbers:
-XGBRegressor     -> [2, 13, 21, 23, 25, 28, 30]  (suma=142, neparnih=4/7, niskih(<=19)=2/7, raspon=28)
-XGBRFRegressor   -> [8, 10, 23, 26, 32, 34, 37]  (suma=170, neparnih=2/7, niskih(<=19)=2/7, raspon=29)
-ENSEMBLE         -> [2, 8, 21, 23, 25, 28, 30]  (suma=137, neparnih=3/7, niskih(<=19)=2/7, raspon=28)
+XGBRegressor     -> [2, x, 21, y, 25, z, 30]  (suma=142, neparnih=4/7, niskih(<=19)=2/7, raspon=28)
+XGBRFRegressor   -> [8, x, 23, y, 32, z, 37]  (suma=170, neparnih=2/7, niskih(<=19)=2/7, raspon=29)
+ENSEMBLE         -> [2, x, 21, y, 25, z, 30]  (suma=137, neparnih=3/7, niskih(<=19)=2/7, raspon=28)
 
-Snimljeno u: /Users/4c/Desktop/GHQ/KvantniRegresor/loto7_xgboost_2_predikcija.txt
+Snimljeno u: /loto7_xgboost_2_predikcija.txt
 
 Učitano kombinacija: 4620, Broj pozicija: 7
 
